@@ -19,7 +19,7 @@ int main(){
 		//Thuc hien khi a > 0 dung
 		cout << "a la so duong" << endl;
 	} else if (a < 0){
-		//Thuc hien thi a > 0 sai, a < 0 dung
+		//Thuc hien khi a > 0 sai, a < 0 dung
 		cout << "a la so am" << endl;
 	} else {
 		//Thuc hien khi a > 0 sai, a < 0 sai
