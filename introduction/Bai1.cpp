@@ -28,4 +28,5 @@ int main(){
 	cout << "a - b = " << hieu << endl;
 	cout << "a * b = " << tich << endl;
 	cout << "a / b == " << thuong << endl;
+	return 0;
 }

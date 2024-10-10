@@ -40,4 +40,5 @@ int main(){
 	cout << "e, " << cauE << endl;
 	cout << "f, " << cauF << endl;
 	cout << "g, " << cauG << endl;
+	return 0;
 }
