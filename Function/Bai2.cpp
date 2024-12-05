@@ -13,7 +13,7 @@
 #include <cmath>
 using namespace std;
 //Nhap
-int nhap(){
+float nhap(){
 	float n;
 	cin >> n;
 	return n;
@@ -54,7 +54,7 @@ void tinhf(float a, float b){
 }
 //Tinh a * b * c
 void tinhg(float a, float b, float c){
-	int g = a * b * c;
+	float g = a * b * c;
 	cout << "a * b * c = " << g << endl;
 }
 
