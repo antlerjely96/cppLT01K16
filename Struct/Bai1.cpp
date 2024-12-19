@@ -76,4 +76,5 @@ int main(){
 		totalSalary += nv[i].luong;
 	}
 	cout << "Total salary: " << totalSalary << endl;
+	return 0;
 }
