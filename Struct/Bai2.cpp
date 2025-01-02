@@ -92,7 +92,7 @@ int main(){
 	
 	//e. Sap xep mang theo thu tu tang dan cua diem trung binh
 	student temp;
-	for(int i = 0; i < n; i++){
+	for(int i = 0; i < n - 1; i++){
 		for(int j = i + 1; j < n; j++){
 			if(st[i].averageMark > st[j].averageMark){
 				temp.id = st[i].id;
