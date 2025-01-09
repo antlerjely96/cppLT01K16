@@ -69,7 +69,7 @@ int main(){
 			cout << "Ho ten nhan vien: " << nv[i].hoTen << endl;
 			cout << "So ngay lam viec: " << nv[i].soNgayLamViec << endl;
 			cout << "Luong co ban: " << nv[i].luongCoBan << endl;
-			cout << "Luong thuc te: " << nv[i].luongCoBan * nv[i].soNgayLamViec << endl;
+			cout << "Luong thuc te: " << nv[i].luongThucTe << endl;
 		}
 	}
 	//Tim nhan vien theo ten
@@ -84,18 +84,32 @@ int main(){
 			cout << "Ho ten nhan vien: " << nv[i].hoTen << endl;
 			cout << "So ngay lam viec: " << nv[i].soNgayLamViec << endl;
 			cout << "Luong co ban: " << nv[i].luongCoBan << endl;
-			cout << "Luong thuc te: " << nv[i].luongCoBan * nv[i].soNgayLamViec << endl;
+			cout << "Luong thuc te: " << nv[i].luongThucTe << endl;
 		}
 	}
 	//In ra danh sach nhan vien theo thu tu luong thuc te giam dan
 	//Sap xep theo luong thuc te giam dan
 	nhanVien temp;
 	for(int i = 0; i < soLuong - 1; i++){
-		for(int j = i + 1; i < soLuong; j++){
+		for(int j = i + 1; j < soLuong; j++){
 			if(nv[i].luongThucTe < nv[j].luongThucTe){
-				temp = nv[i];
-				nv[i] = nv[j];
-				nv[j] = temp;
+				temp.maNhanvien = nv[i].maNhanvien;
+				temp.hoTen = nv[i].hoTen;
+				temp.luongCoBan = nv[i].luongCoBan;
+				temp.soNgayLamViec = nv[i].soNgayLamViec;
+				temp.luongThucTe = nv[i].luongThucTe;
+				
+				nv[i].maNhanvien = nv[j].maNhanvien;
+				nv[i].hoTen = nv[j].hoTen;
+				nv[i].luongCoBan = nv[j].luongCoBan;
+				nv[i].soNgayLamViec = nv[j].soNgayLamViec;
+				nv[i].luongThucTe = nv[j].luongThucTe;
+				
+				nv[j].maNhanvien = temp.maNhanvien;
+				nv[j].hoTen = temp.hoTen;
+				nv[j].luongCoBan = temp.luongCoBan;
+				nv[j].soNgayLamViec = temp.soNgayLamViec;
+				nv[j].luongThucTe = temp.luongThucTe;
 			}
 		}
 	}
@@ -106,7 +120,7 @@ int main(){
 		cout << "Ho ten nhan vien: " << nv[i].hoTen << endl;
 		cout << "So ngay lam viec: " << nv[i].soNgayLamViec << endl;
 		cout << "Luong co ban: " << nv[i].luongCoBan << endl;
-		cout << "Luong thuc te: " << nv[i].luongCoBan * nv[i].soNgayLamViec << endl;
+		cout << "Luong thuc te: " << nv[i].luongThucTe << endl;
 	}
 	return 0;
 }
