@@ -15,9 +15,9 @@ using namespace std;
 struct nhanVien {
 	string maNhanvien;
 	string hoTen;
-	float soNgayLamViec;
-	float luongCoBan;
-	float luongThucTe;
+	int soNgayLamViec;
+	int luongCoBan;
+	int luongThucTe;
 };
 
 int main(){
@@ -75,6 +75,7 @@ int main(){
 	//Tim nhan vien theo ten
 	//Khai bao ten can tim
 	string tenCanTim;
+	cout << "Nhap ten can tim";
 	getline(cin, tenCanTim);
 	//Hien thi thong tin nhung nhan vien co ten can tim
 	cout << "Thong tin cac nhan vien co ten duoc tim kiem!" << endl;
