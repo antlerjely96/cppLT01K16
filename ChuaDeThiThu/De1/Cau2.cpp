@@ -90,8 +90,8 @@ int main(){
 	//In ra danh sach nhan vien theo thu tu luong thuc te giam dan
 	//Sap xep theo luong thuc te giam dan
 	nhanVien temp;
-	for(int i = 0; i < n - 1; i++){
-		for(int j = i + 1; i < n; j++){
+	for(int i = 0; i < soLuong - 1; i++){
+		for(int j = i + 1; i < soLuong; j++){
 			if(nv[i].luongThucTe < nv[j].luongThucTe){
 				temp = nv[i];
 				nv[i] = nv[j];
