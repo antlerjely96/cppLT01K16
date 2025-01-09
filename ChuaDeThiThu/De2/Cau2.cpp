@@ -54,7 +54,7 @@ int main(){
 	cout << "Danh sach hoc sinh vua nhap!" << endl;
 	for(int i = 0; i < soLuong; i++){
 		cout << "Ma hoc sinh: " << hs[i].maHocSinh << endl;
-		cout << "Ten hoc sinh" << cin, hs[i].tenHocSinh << endl;
+		cout << "Ten hoc sinh" << hs[i].tenHocSinh << endl;
 		cout << "Diem 15 phut" << hs[i].diem15Phut << endl;
 		cout << "Diem 1 tiet" << hs[i].diem1Tiet << endl;
 		cout << "Diem hoc ky" << hs[i].diemHocKy << endl;
@@ -71,7 +71,7 @@ int main(){
 	for(int i = 0; i < soLuong; i++){
 		if(hs[i].maHocSinh.compare(maCanTim) == 0){
 			cout << "Ma hoc sinh: " << hs[i].maHocSinh << endl;
-			cout << "Ten hoc sinh" << cin, hs[i].tenHocSinh << endl;
+			cout << "Ten hoc sinh" << hs[i].tenHocSinh << endl;
 			cout << "Diem 15 phut" << hs[i].diem15Phut << endl;
 			cout << "Diem 1 tiet" << hs[i].diem1Tiet << endl;
 			cout << "Diem hoc ky" << hs[i].diemHocKy << endl;
@@ -87,7 +87,7 @@ int main(){
 	for(int i = 0; i < soLuong; i++){
 		if(hs[i].tenHocSinh.compare(tenCanTim) == 0){
 			cout << "Ma hoc sinh: " << hs[i].maHocSinh << endl;
-			cout << "Ten hoc sinh" << cin, hs[i].tenHocSinh << endl;
+			cout << "Ten hoc sinh" << hs[i].tenHocSinh << endl;
 			cout << "Diem 15 phut" << hs[i].diem15Phut << endl;
 			cout << "Diem 1 tiet" << hs[i].diem1Tiet << endl;
 			cout << "Diem hoc ky" << hs[i].diemHocKy << endl;
@@ -111,7 +111,7 @@ int main(){
 	cout << "Danh sach hoc sinh sau khi sap xep!" << endl;
 	for(int i = 0; i < soLuong; i++){
 		cout << "Ma hoc sinh: " << hs[i].maHocSinh << endl;
-		cout << "Ten hoc sinh" << cin, hs[i].tenHocSinh << endl;
+		cout << "Ten hoc sinh" << hs[i].tenHocSinh << endl;
 		cout << "Diem 15 phut" << hs[i].diem15Phut << endl;
 		cout << "Diem 1 tiet" << hs[i].diem1Tiet << endl;
 		cout << "Diem hoc ky" << hs[i].diemHocKy << endl;
