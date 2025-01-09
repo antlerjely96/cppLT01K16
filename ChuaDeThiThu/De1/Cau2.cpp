@@ -15,9 +15,9 @@ using namespace std;
 struct nhanVien {
 	string maNhanvien;
 	string hoTen;
-	int soNgayLamViec;
-	int luongCoBan;
-	int luongThucTe;
+	float soNgayLamViec;
+	float luongCoBan;
+	float luongThucTe;
 };
 
 int main(){
@@ -43,7 +43,8 @@ int main(){
 		cin >> nv[i].soNgayLamViec;
 		cout << "Luong co ban: ";
 		cin >> nv[i].luongCoBan;
-		cout << "Luong thuc te: " << nv[i].luongCoBan * nv[i].soNgayLamViec << endl;
+		nv[i].luongThucTe = nv[i].luongCoBan * nv[i].soNgayLamViec;
+		cout << "Luong thuc te: " << nv[i].luongThucTe << endl;
 	}
 	//Hien thi danh sach nhan vien
 	cout << "Thong tin cac nhan vien vua duoc nhap!" << endl;
