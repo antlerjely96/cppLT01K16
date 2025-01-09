@@ -39,16 +39,16 @@ int main(){
 		cin.ignore();
 		cout << "Ma hoc sinh: ";
 		getline(cin, hs[i].maHocSinh);
-		cout << "Ten hoc sinh";
+		cout << "Ten hoc sinh: ";
 		getline(cin, hs[i].tenHocSinh);
-		cout << "Diem 15 phut";
+		cout << "Diem 15 phut: ";
 		cin >> hs[i].diem15Phut;
-		cout << "Diem 1 tiet";
+		cout << "Diem 1 tiet: ";
 		cin >> hs[i].diem1Tiet;
-		cout << "Diem hoc ky";
+		cout << "Diem hoc ky: ";
 		cin >> hs[i].diemHocKy;
 		hs[i].diemTrungBinh = (hs[i].diem15Phut + hs[i].diem1Tiet * 2 + hs[i].diemHocKy * 3) / 6;
-		cout << "Diem trung binh: " << hs[i].diemTrungBinh;
+		cout << "Diem trung binh: " << hs[i].diemTrungBinh << endl;
 	}
 	//Hien thi danh sach hoc sinh vua nhap
 	cout << "Danh sach hoc sinh vua nhap!" << endl;
